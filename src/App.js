@@ -1,12 +1,11 @@
-import Greetings from './Greetings';
-import ListView from './ListView';
+import Parent from './Parent';
+import Counter from './Counter';
 function App() {
   return (
     <div className="App">
-      <Greetings name = "Beautiful Code"
-      />
-      <ListView />
-      <ListView start={15} end={20}/>
+      <Parent />
+      <Counter/>
+      <Counter defaultValue={5}/> 
     </div>
   );
 }
