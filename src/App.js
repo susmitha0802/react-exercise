@@ -4,8 +4,7 @@ function App() {
   return (
     <div className="App">
       <Parent />
-      <Counter/>
-      <Counter defaultValue={5}/> 
+      <Counter />
     </div>
   );
 }
