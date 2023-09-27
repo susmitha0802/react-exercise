@@ -26,6 +26,13 @@ export default function Parent() {
     }
     function validateForm() {
         let error;
+        if(formDetails.name === "") {
+            document.getElementById("error-name").textContent = 'User name is mandatory';
+            error = true;
+        }
+        else {
+            document.getElementById("error-email").textContent = "";
+        }
         if (formDetails.email !== "" && !/\S+@\S+.\S+/.test(formDetails.email)) {
             document.getElementById("error-email").textContent = 'Invalid email format';
             setFormDetails({
