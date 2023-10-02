@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../App.css';
 
 export default function Counter({defaultValue=0}) {
     const [value, setValue] = useState(defaultValue);
@@ -15,7 +16,7 @@ export default function Counter({defaultValue=0}) {
 function Button({value=5, onClick}) {
     return(
         <>
-            <button style={{margin:10}} onClick={onClick}>{value}</button>
+            <button className="style-margin" onClick={onClick}>{value}</button>
         </>
     );
 }
